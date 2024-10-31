@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <form action="/" method="POST">
+        <label for="celsius">Celsius:</label>
+        <input type="text" id="celsius" name="celsius">
+        <br><br>
+        <input type="submit" value="Convert to Fahrenheit">
+    </form>
+
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+
+    {% if fahrenheit %}
+        <h3>Fahrenheit: {{ fahrenheit }}</h3>
+    {% endif %}
+</body>
+</html>

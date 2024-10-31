@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form action="/" method="POST">
+        <label for="num1">Enter Number 1: </label>
+        <input type="text" name="num1" id="">
+        <br>
+
+        <label for="num2">Enter Number 2: </label>
+        <input type="text" name="num2" id="">
+        <br><br>
+        
+        <label for="">Select Operation: </label>
+            <br>
+            <input type="radio" name="op" id="add" value="+">
+            <label for="add">Add</label>
+            <br>
+            <input type="radio" name="op" id="sub" value="-">
+            <label for="sub">Subtract</label>
+            <br>
+            <input type="radio" name="op" id="mult" value="*">
+            <label for="mult">Multiply</label>
+            <br>
+            <input type="radio" name="op" id="div" value="/">
+            <label for="div">Divide</label>
+            <br>
+        <br>
+        <button type="submit">Calculate</button>
+    </form>
+
+    
+    {% if ans %}
+        <h2>Answer: {{ ans }}</h2>
+    {% endif %}
+</body>
+</html>
